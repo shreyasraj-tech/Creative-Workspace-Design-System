@@ -176,3 +176,28 @@ Before delivering a new design, verify:
 `design-tokens.json` explicitly records that the runtime verified the 102-page manifest and decoded the embedded token JSON, but did not have a full semantic Kiwi node-tree decoder available. Fields marked `Not semantically decoded` must never be interpreted as zero or as evidence that the source contains nothing there.
 
 If a task requires exact node geometry, auto-layout, parent-child hierarchy, vector paths, or per-node visual properties, perform a full Kiwi semantic decode before making source-specific claims.
+
+
+Use the Creative Workspace Global AI Design System as the visual source of truth.
+
+First identify the closest existing component or custom Creative Workspace pattern.
+
+Reuse existing component variants and states.
+
+Use semantic tokens before primitive tokens.
+
+Use the Aura collection as the primary global token source unless the requested component belongs to a clearly defined custom Creative Workspace pattern.
+
+Preserve Inter typography.
+
+Preserve the existing spacing, radius, border, focus, surface, and elevation system.
+
+Use the existing Light or Dark mode values instead of manually transforming colors.
+
+Do not invent colors, typography, component states, or spacing when an existing token or component already satisfies the requirement.
+
+When a new pattern is genuinely required, construct it using existing primitives and semantic tokens and keep the naming structure consistent with the existing design system.
+
+Before finalizing the design, check component selection, typography, color semantics, spacing, radius, states, focus behavior, disabled behavior, and accessibility.
+
+When implementing a new requirement, explain the design decision only when requested. Otherwise apply the system directly.
